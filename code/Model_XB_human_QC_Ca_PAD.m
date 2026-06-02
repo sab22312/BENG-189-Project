@@ -18,7 +18,6 @@ end
 perfusion = getFieldWithDefault(pad, 'perfusion', 1.0);
 perfusion = min(max(perfusion, 0), 1);
 ischemia = 1 - perfusion;
-
 ca_rest = getFieldWithDefault(pad, 'ca_rest', 0.05);
 ca_max = getFieldWithDefault(pad, 'ca_max', 1.0);
 k_release = getFieldWithDefault(pad, 'k_release', 12.0);
